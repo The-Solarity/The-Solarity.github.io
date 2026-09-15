@@ -37,3 +37,9 @@ h1 {
     border: 1px solid #333333;
     border-radius: 12px;
 }
+
+.links img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
