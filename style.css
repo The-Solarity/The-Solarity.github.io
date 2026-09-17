@@ -86,3 +86,8 @@ body::before {
         transform: translate(300px, 250px);
     }
 }
+
+.links a.copied {
+    border-color: #888888;
+    transform: translateY(-3px);
+}
