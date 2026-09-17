@@ -16,8 +16,3 @@ discord.addEventListener("click", async function (event) {
         console.error("Clipboard failed:", error);
     }
 });
-
-.links a.copied {
-    border-color: #888888;
-    transform: translateY(-3px);
-}
