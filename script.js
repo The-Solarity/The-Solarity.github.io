@@ -5,11 +5,6 @@ discord.addEventListener("click", async function (event) {
 
     try {
         await navigator.clipboard.writeText("the_lunarity");
-        console.log("Discord name copied!");
-    } catch (error) {
-        console.error("Clipboard failed:", error);
-    }
-});
 
         discord.classList.add("copied");
 
