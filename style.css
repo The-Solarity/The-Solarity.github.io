@@ -61,30 +61,30 @@ body {
 body::before {
     content: "";
     position: fixed;
-    width: 500px;
-    height: 500px;
-    top: -200px;
-    left: -150px;
+    inset: 0;
+
+    width: 600px;
+    height: 600px;
+
+    top: -250px;
+    left: -200px;
 
     background: radial-gradient(
         circle,
-        rgba(70, 90, 255, 0.08),
-        transparent 70%
+        rgba(70, 90, 255, 0.12),
+        transparent 65%
     );
 
-    filter: blur(20px);
+    filter: blur(30px);
     animation: drift 12s ease-in-out infinite alternate;
+
     pointer-events: none;
+    z-index: 0;
 }
 
-@keyframes drift {
-    from {
-        transform: translate(0, 0);
-    }
-
-    to {
-        transform: translate(300px, 250px);
-    }
+main {
+    position: relative;
+    z-index: 1;
 }
 
 #hidden-message {
